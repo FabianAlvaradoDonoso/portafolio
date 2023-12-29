@@ -1,0 +1,27 @@
+---
+import ExperienceItem from './ExperienceItem.astro'
+const EXPERIENCIE = [
+  {
+    date: 'Actualmente...',
+    title: 'Desarrollador Fullstack Junior - Grant Thornton Chile',
+    description:
+      'Cree multiples aplicaciones web para la empresa, utilizando tecnologias como React, NodeJS, FastAPI, Flask, entre otras. Tambien cree multiples scripts para automatizar tareas de la empresa.'
+  },
+  {
+    date: 'Enero 2020',
+    title: 'Desarrollador RPA - Apiux Technología',
+    description:
+      'Encargado de crear multiples robots para automatizar tareas de la empresa, utilizando tecnologias como UiPath, Automation Anywhere y Python.'
+  }
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
