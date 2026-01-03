@@ -1,0 +1,33 @@
+# robots.txt para Portafolio de Fabian Alvarado Donoso
+
+# Permitir acceso a todos los bots
+User-agent: *
+Allow: /
+
+# Bloquear acceso a archivos de configuración y directorios sensibles
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*.yml$
+Disallow: /*.yaml$
+
+# Configuraciones específicas para bots de búsqueda principales
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Bloquear bots maliciosos o scrapers agresivos
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+Sitemap: https://redpandachile.dev/sitemap-index.xml
